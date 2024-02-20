@@ -1,0 +1,11 @@
+<div class="abilities-main-box">
+    <h4 class="h5">{{ data.title }}</h4>
+    <p class="h6 font-weight-normal">Frontend developer</p>
+    <div 
+        [ngClass]="active ? 'bg-white text-primary' : 'bg-light'"
+        class="icon rounded-circle d-flex align-items-center justify-content-center mx-auto"
+    >
+        <span *ngIf="!active" class="material-symbols-rounded h6 m-0">question_mark</span>
+        <span *ngIf="active" class="material-symbols-rounded h6 m-0">close</span>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+@import "/src/variables.scss";
+
+$lineHeight: 13px;
+
+::ng-deep #experience {
+    #list > div {
+        border-top: 13px solid $secondary;
+        margin-top: $experienceFloatItemsHeight;
+    }
+}

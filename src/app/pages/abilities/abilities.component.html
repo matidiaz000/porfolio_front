@@ -1,0 +1,32 @@
+<div class="h-100 d-flex flex-column">
+    <div class="container flex-grow-1 pt-2">
+        <h2 class="w-50">Code <span class="text-primary">licensed MIT</span>, docs CC BY 3.0</h2>
+        <p class="h5 w-75 font-weight-normal">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+        <nav class="d-flex mx-n3 pt-3">
+            <a
+                class="px-3"
+                *ngFor="let item of nav; index as i;"
+                (click)="onNavClick(item.id)"
+                [class.font-weight-bold]="activeNav == item.id ? true : false"
+            >{{ item.title }}</a>
+        </nav>
+    </div>
+    <div class="bg-light">
+        <div class="scroll-x w-100 px-3 py-5" appHorizontalScroll>
+            <div class="d-flex" *ngIf="!loading_items">
+                <app-main-box
+                    (click)="onItemClick(i)"
+                    *ngFor="let item of data; index as i;"
+                    class="mx-3 cursor-pointer"
+                    [description]="item.description"
+                    [active]="i == activeIndex ? true : false"
+                >
+                    <app-abilities-main-box 
+                        [data]="item"
+                        [active]="i == activeIndex ? true : false"
+                    ></app-abilities-main-box>
+                </app-main-box>
+            </div>
+        </div>
+    </div>
+</div>

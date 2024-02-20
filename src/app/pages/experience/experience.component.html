@@ -1,0 +1,16 @@
+<div id="experience" class="h-100 d-flex flex-column position-relative">
+    <div class="container text-center flex-grow-1 pt-2">
+        <h2 class="w-50 mx-auto">Code <span class="text-primary">licensed MIT</span>, docs CC BY 3.0</h2>
+        <p class="h5 w-75 mx-auto font-weight-normal">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.</p>
+    </div>
+    <div id="list" class="scroll-x" appHorizontalScroll>
+        <div class="bg-light d-inline-flex align-items-center px-3 pt-4 pb-5">
+            <app-experience-items class="mx-3" [class.active]="false"></app-experience-items>
+            <app-experience-items class="mx-3" [class.active]="true" [active]="true"></app-experience-items>
+            <app-experience-items class="mx-3" [class.active]="false"></app-experience-items>
+            <app-experience-items class="mx-3" [class.active]="false"></app-experience-items>
+            <app-experience-items class="mx-3" [class.active]="false"></app-experience-items>
+            <app-experience-items class="mx-3" [class.active]="false"></app-experience-items>
+        </div>
+    </div>
+</div>

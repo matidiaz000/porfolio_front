@@ -1,0 +1,26 @@
+<div class="float-items">
+    <div class="d-flex flex-column align-items-center w-100">
+        <span
+            [ngClass]="active ?
+                'border-primary bg-primary text-white' :
+                'border-light bg-light text-light-dark bg-hover-white border-hover-light-dark'
+            "
+            class="badge badge-pill cursor-pointer border px-3 py-1 mx-auto mb-2 font-weight-bold"
+        >2010 / Actualidad</span>
+        <div class="circles d-flex align-items-center">
+            <span *ngIf="active" class="bg-primary rounded-circle cursor-pointer"></span>
+            <span *ngIf="!active" class="bg-light rounded-circle cursor-pointer bg-hover-white"></span>
+        </div>
+    </div>
+</div>
+<app-main-box class="mt-2 d-block cursor-pointer" [active]="active" [description]="'asd'">
+    <h4 class="h5">Titulo</h4>
+    <p class="h6 font-weight-normal">Frontend developer</p>
+    <div 
+        [ngClass]="active ? 'bg-white text-primary' : 'bg-light'"
+        class="icon rounded-circle d-flex align-items-center justify-content-center mx-auto"
+    >
+        <span *ngIf="!active" class="material-symbols-rounded h6 m-0">question_mark</span>
+        <span *ngIf="active" class="material-symbols-rounded h6 m-0">close</span>
+    </div>
+</app-main-box>

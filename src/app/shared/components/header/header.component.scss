@@ -1,0 +1,8 @@
+@import "/src/variables.scss";
+
+::ng-deep #header {
+    z-index: 3;
+    h3, button {
+        min-width: 167px;
+    }
+}

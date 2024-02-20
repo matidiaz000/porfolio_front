@@ -1,0 +1,11 @@
+@import "/src/variables.scss";
+
+::ng-deep #home {
+    .overflow-hidden {
+        lottie-player {
+            height: 110%;
+            margin: -5rem auto -10rem;
+            transform: translate(17%,0px);
+        }
+    }
+}

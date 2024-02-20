@@ -1,0 +1,17 @@
+<div class="main-box d-flex">
+    <div
+        class="item p-4 rounded text-center"
+        [ngClass]="active ?
+            'bg-primary text-white' :
+            'bg-white text-light-dark text-hover-dark'
+        "
+    >
+        <ng-content></ng-content>
+    </div>
+    <div class="description bg-white p-4 rounded small ml-n4" *ngIf="active">
+        <div class="pl-4">
+            <p class="mb-1"><strong>Descripción</strong></p>
+            <p class="mb-0">{{ description }}</p>
+        </div>
+    </div>
+</div>

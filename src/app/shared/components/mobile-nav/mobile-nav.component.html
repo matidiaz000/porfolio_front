@@ -1,0 +1,56 @@
+<div id="mobile-nav">
+    <nav class="bg-white w-100 px-3 py-2 rounded-top d-flex align-items-center justify-content-between justify-content-sm-around">
+        <button
+            [ngClass]="active == 'home' ? ' btn-primary text-white px-2' : ' btn-light text-light-dark rounded-circle'"
+            class="btn d-flex align-items-center justify-content-center p-1 h6 m-0"
+        >
+            <span
+                class="material-symbols-rounded h3 mb-0 font-weight-normal"
+                [ngClass]="active == 'home' ? 'mr-1' : ''"
+            >home</span>
+            <span
+                class="small font-weight-bold mr-1"
+                *ngIf="active == 'home'"
+            >Inicio</span>
+        </button>
+        <button
+            [ngClass]="active == 'abilities' ? ' btn-primary text-white' : ' btn-light text-light-dark rounded-circle'"
+            class="btn d-flex align-items-center justify-content-center p-1 h6 m-0"
+        >
+            <span
+                class="material-symbols-rounded h3 mb-0 font-weight-normal"
+                [ngClass]="active == 'abilities' ? 'mr-1' : ''"
+            >star</span>
+            <span
+                class="small font-weight-bold mr-1"
+                *ngIf="active == 'abilities'"
+            >Habilidades</span>
+        </button>
+        <button
+            [ngClass]="active == 'experience' ? ' btn-primary text-white' : ' btn-light text-light-dark rounded-circle'"
+            class="btn d-flex align-items-center justify-content-center p-1 h6 m-0"
+        >
+            <span
+                class="material-symbols-rounded h3 mb-0 font-weight-normal"
+                [ngClass]="active == 'experience' ? 'mr-1' : ''"
+            >science</span>
+            <span
+                class="small font-weight-bold mr-1"
+                *ngIf="active == 'experience'"
+            >Experiencia</span>
+        </button>
+        <button
+            [ngClass]="active == 'contact' ? ' btn-primary text-white' : ' btn-light text-light-dark rounded-circle'"
+            class="btn d-flex align-items-center justify-content-center p-1 h6 m-0"
+        >
+            <span
+                class="material-symbols-rounded h3 mb-0 font-weight-normal"
+                [ngClass]="active == 'contact' ? 'mr-1' : ''"
+            >mail</span>
+            <span
+                class="small font-weight-bold mr-1"
+                *ngIf="active == 'contact'"
+            >Contacto</span>
+        </button>
+    </nav>
+</div>
